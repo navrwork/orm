@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.navr.hibernatedemo.entity.EmployeeAddress" table="employee_address">
+        <id name="empAddrId" column="emp_addr_id">
+            <generator class="identity" />
+        </id>
+
+        <property name="empId" column="emp_id"/>
+        <property name="address"/>
+        <property name="city"/>
+        <property name="state"/>
+        <property name="zip"/>
+
+    </class>
+
+</hibernate-mapping>
